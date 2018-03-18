@@ -14,13 +14,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mule.version>3.9.0</mule.version>
 		<mule.tools.version>1.2</mule.tools.version>
-		<mule.home>${env.MULE_HOME}</mule.home>
+		<!-- <mule.home>${MULE_HOME}</mule.home> -->
 		<mule.runtime.community>true</mule.runtime.community>
 		<anypoint.username>${env.ANYPOINT_USERNAME}</anypoint.username>
 		<anypoint.password>${env.ANYPOINT_PASSWORD}</anypoint.password>
 		<cloundhub.env>Development</cloundhub.env>
-		
-		<arm.target.name>server</arm.target.name>
+		<anypoint.uri>anypoint.mulesoft.com</anypoint.uri>
+		<arm.target.name></arm.target.name>
 		<!-- One of: server, serverGroup, cluster -->
 		<arm.target.type>server</arm.target.type>
 		<arm.environment>Development</arm.environment>
@@ -28,15 +28,15 @@
 	</properties>
 
 	<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<finalName>${artifactId}-${version}-b${build.number}</finalName>
@@ -45,9 +45,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.8.2</version>
-<!-- 				<configuration> -->
-<!-- 					<skip>true</skip> -->
-<!-- 				</configuration> -->
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -110,6 +107,7 @@
 						<artifactId>mule-maven-plugin</artifactId>
 						<configuration>
 							<deploymentType>standalone</deploymentType>
+							<muleVersion>${mule.version}</muleVersion>
 							<muleHome>${mule.home}</muleHome>
 							<applicationName>${artifactId}</applicationName>
 							<community>${mule.runtime.community}</community>
@@ -141,6 +139,11 @@
 							<password>${anypoint.password}</password>
 							<applicationName>${artifactId}</applicationName>
 							<environment>${cloundhub.env}</environment>
+							<businessGroup>${anypoint.businessGroup}</businessGroup>
+							<region>${cloudhub.region}</region>
+							<uri>${anypoint.uri}</uri>
+							<workerType>${cloudhub.workerType}</workerType>
+							<workers>${cloudhub.workers}</workers>
 						</configuration>
 						<executions>
 							<execution>
@@ -167,6 +170,8 @@
 							<deploymentType>arm</deploymentType>
 							<username>${anypoint.username}</username>
 							<password>${anypoint.password}</password>
+							<businessGroup>${anypoint.businessGroup}</businessGroup>
+							<uri>${anypoint.uri}</uri>
 							<target>${arm.target.name}</target>
 							<!-- One of: server, serverGroup, cluster -->
 							<targetType>${arm.target.type}</targetType>
