@@ -19,7 +19,7 @@
 		<anypoint.username>${env.ANYPOINT_USERNAME}</anypoint.username>
 		<anypoint.password>${env.ANYPOINT_PASSWORD}</anypoint.password>
 		<cloundhub.env>Development</cloundhub.env>
-		<anypoint.uri>anypoint.mulesoft.com</anypoint.uri>
+		<anypoint.uri>https://anypoint.mulesoft.com</anypoint.uri>
 		<arm.target.name></arm.target.name>
 		<!-- One of: server, serverGroup, cluster -->
 		<arm.target.type>server</arm.target.type>
