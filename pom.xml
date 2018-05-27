@@ -8,11 +8,6 @@
 	<packaging>pom</packaging>
 	<name>Mule mule-maven-parent-pom Application</name>
 
-	<properties>
-			<category>Community</category>
-			<licensePath>LICENSE.md</licensePath>
-			<devkit.studio.package.skip>false</devkit.studio.package.skip>
-		</properties>
 
 		<developers>
 			<developer>
@@ -35,6 +30,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mule.version>3.9.0</mule.version>
+		<licensePath>LICENSE.md</licensePath>
 		<mule.tools.version>1.2</mule.tools.version>
 		<!-- <mule.home>${MULE_HOME}</mule.home> -->
 		<mule.runtime.community>true</mule.runtime.community>
