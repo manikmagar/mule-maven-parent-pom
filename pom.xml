@@ -9,6 +9,22 @@
 	<packaging>pom</packaging>
 	<name>Mule mule-maven-parent-pom Application</name>
 
+	<properties>
+			<category>Community</category>
+			<licensePath>LICENSE.md</licensePath>
+			<devkit.studio.package.skip>false</devkit.studio.package.skip>
+		</properties>
+
+		<developers>
+			<developer>
+				<name>Manik Magar</name>
+				<email>manik.magar@gmail.com</email>
+				<organization>Home</organization>
+				<organizationUrl>https://javastreets.com</organizationUrl>
+			</developer>
+		</developers>
+
+
 	<scm>
 		<url>https://github.com/manikmagar/mule-maven-parent-pom</url>
 		<connection>scm:git:git@github.com:manikmagar/mule-maven-parent-pom.git</connection>
