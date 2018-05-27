@@ -7,7 +7,7 @@
 	<version>0.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Mule mule-maven-parent-pom Application</name>
-
+	<description>Example Parent POM for Mule 3 Applications</description>
 
 	<developers>
 		<developer>
