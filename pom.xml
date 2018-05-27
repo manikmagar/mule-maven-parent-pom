@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.javastreets</groupId>
 	<artifactId>mule-maven-parent-pom</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Mule mule-maven-parent-pom Application</name>
 
@@ -36,7 +36,7 @@
 		<url>https://github.com/manikmagar/mule-maven-parent-pom</url>
 		<connection>scm:git:git@github.com:manikmagar/mule-maven-parent-pom.git</connection>
 		<developerConnection>scm:git:git@github.com:manikmagar/mule-maven-parent-pom.git</developerConnection>
-		<tag>mule-maven-parent-pom-0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
