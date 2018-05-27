@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.javastreets</groupId>
@@ -9,15 +11,28 @@
 	<name>Mule mule-maven-parent-pom Application</name>
 
 
-		<developers>
-			<developer>
-				<name>Manik Magar</name>
-				<email>manik.magar@gmail.com</email>
-				<organization>Home</organization>
-				<organizationUrl>https://javastreets.com</organizationUrl>
-			</developer>
-		</developers>
+	<developers>
+		<developer>
+			<name>Manik Magar</name>
+			<email>manik.magar@gmail.com</email>
+			<organization>Home</organization>
+			<organizationUrl>https://javastreets.com</organizationUrl>
+		</developer>
+	</developers>
 
+
+	<organization>
+		<name>JavaStreets.com</name>
+		<url>https://javastreets.com</url>
+	</organization>
+	<url>https://github.com/manikmagar/mule-maven-parent-pom</url>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<scm>
 		<url>https://github.com/manikmagar/mule-maven-parent-pom</url>
